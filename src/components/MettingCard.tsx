@@ -1,4 +1,4 @@
-import useMeetingActions from "@/hooks/useMeetingActions";
+import useMeetingActions from "@/hooks/useMettingActions";
 import { Doc } from "../../convex/_generated/dataModel";
 import { getMeetingStatus } from "@/lib/utils";
 import { format } from "date-fns";
