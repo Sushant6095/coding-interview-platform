@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/select";
 import UserInfo from "@/components/UserInfo";
 import { Loader2Icon, XIcon } from "lucide-react";
-import { Calendar } from "@/components/ui/calendar";
+
 import { TIME_SLOTS } from "@/constants";
 import MeetingCard from "@/components/MettingCard";
 
@@ -233,16 +233,7 @@ function InterviewScheduleUI() {
               {/* DATE & TIME */}
               <div className="flex gap-4">
                 {/* CALENDAR */}
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Date</label>
-                  <Calendar
-                    mode="single"
-                    selected={formData.date}
-                    onSelect={(date) => date && setFormData({ ...formData, date })}
-                    disabled={(date) => date < new Date()}
-                    className="rounded-md border"
-                  />
-                </div>
+              
 
                 {/* TIME */}
 
